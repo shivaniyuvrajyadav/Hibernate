@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\Shivani\Desktop\framework\onetomany_uni\src\main\java\org\jsp\onetomany_uni\dao\Flipkart_User_Items_Dao.java"/>
+			<item value="C:\Users\Shivani\Desktop\framework\cahing_"/>
+			<item value="C:\Users\Shivani\Downloads\Caching\Caching\src\main\java\org\jsp\Caching\Controller\Emp_Controller.java"/>
+			<item value="C:\Users\Shivani\Desktop\framework\ManyToManyUni"/>
+			<item value="C:\Users\Shivani\Desktop\framework\ManyToOneuni\src\main\java\com\ty\dao\Passenger_Flight_Dao.java"/>
+			<item value="C:\Users\Shivani\Desktop\framework\ManyToOne"/>
+			<item value="C:\Users\Shivani\Desktop\framework\ManyToOne\src\main\java\com\jsp\controller\Department_Employee_Controller.java"/>
+			<item value="C:\Users\Shivani\Desktop\framework\onetomany_bii"/>
+			<item value="C:\Users\Shivani\Downloads\ManyToOneBi"/>
+			<item value="C:\Users\Shivani\Desktop\framework\onetoone"/>
+			<item value="C:\Users\Shivani\Desktop\framework\onetoneAssignment"/>
+			<item value="C:\Users\Shivani\Desktop\framework\onetomany_uni\src\main\java\org\jsp\onetomany_uni\controller\Flipkart_User_Items_Controller.java"/>
+			<item value="C:\Users\Shivani\Desktop\framework\onetoone_bi\src\main\java\org\jsp\onetoone_bi\dto\Passport.java"/>
+			<item value="C:\Users\Shivani\Desktop\framework\onetoone_bi\src\main\java\org\jsp\onetoone_bi\dto\Person.java"/>
+			<item value="C:\Users\Shivani\Desktop\framework\Bike_wala\src\main\java\org\jsp\bike_wala\Bike.java"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="All Catalogs"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+		</list>
+		<list key="groupId">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+			<item value="com.ty"/>
+			<item value="com.jsp"/>
+			<item value="com.jsp.Gautami"/>
+			<item value="org.jsp"/>
+			<item value="Car_wala"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="mock"/>
+			<item value="Composite_key2"/>
+			<item value="Composite_key"/>
+			<item value="uyuyyul"/>
+			<item value="cahing_"/>
+			<item value="caching"/>
+			<item value="ManyToManyuni2"/>
+			<item value="ManytooneBii"/>
+			<item value="ManytoManyBii"/>
+			<item value="ManyToOneuni"/>
+			<item value="ManyToManyBI"/>
+			<item value="ManyToMany"/>
+			<item value="many_to_one_bi"/>
+			<item value="Manytoone"/>
+			<item value="ManyToOne"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.dialogs.MavenRepositorySearchDialog">
+		<item key="width" value="480"/>
+		<item key="height" value="838"/>
+		<item key="x" value="720"/>
+		<item key="y" value="0"/>
+	</section>
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="Caching"/>
+			<item value="ManyToOneBi"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="Caching"/>
+			<item value="ManyToOneBi"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+</section>

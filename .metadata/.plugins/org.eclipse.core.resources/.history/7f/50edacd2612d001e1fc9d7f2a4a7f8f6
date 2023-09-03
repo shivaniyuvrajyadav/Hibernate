@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="pro">
+PNo<input type="text" name="pn"><br/>
+PName<input type="text" name="pnm"><br/>
+PQty<input type="text" name="pt"><br/>
+PPrice<input type="text" name="prs"><br/>
+<input type="submit" value="ok">
+</form>
+</body>
+</html>

@@ -1,0 +1,31 @@
+package org.jsp.onetoone_bi.Controller;
+
+import org.jsp.onetoone_bi.dao.Person_Passport_Dao;
+import org.jsp.onetoone_bi.dto.Passport;
+import org.jsp.onetoone_bi.dto.Person;
+
+public class Person_Passport_Controller {
+
+	public static void main(String[] args) {
+		Passport passport = new Passport();
+		passport.setPno(1002);
+		passport.setOrigin("india");
+		passport.setDate_of_issue("24-07-2002");
+		
+		Person person = new Person();
+		person.setId(102);
+		person.setName("ram");
+		person.setPhno(8081099);
+		person.setAddress("thane");
+		person.setPassport(passport);
+		
+		passport.setPerson(person);
+		
+		Person_Passport_Dao dao = new Person_Passport_Dao();
+	    dao.savePerson(person);
+//	    dao.savePassport(passport);
+
+	}
+	
+	
+}

@@ -1,0 +1,65 @@
+package com.ty.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.ty.dto.Address;
+import com.ty.dto.Employee;
+
+public class Controller {
+public static void main(String[] args) {
+	
+	
+	Address address = new Address();
+	address.setId(1);
+	address.setPhno(7859393119l);
+	address.setPincode(400012);
+	address.setPlace("Parel");
+	
+	Employee employee = new Employee();
+	employee.setId(1);
+	employee.setAge(24);
+	employee.setName("shivani");
+	employee.setPno(87449383920l);
+	
+	Employee employee1 = new Employee();
+	employee1.setId(2);
+	employee1.setAge(26);
+	employee1.setName("sagar");
+	employee1.setPno(87447829920l);
+	
+	Employee employee2 = new Employee();
+	employee2.setId(3);
+	employee2.setAge(25);
+	employee2.setName("shivam");
+	employee2.setPno(8744989299l);
+	
+	List<Employee>list = new ArrayList<Employee>();
+	list.add(employee1);
+	list.add(employee1);
+	list.add(employee2);
+	
+	Department department = new Department();
+	department.setId(3);
+	department.setName("development");
+	
+	
+	
+	Company company = new Company();
+	company.setId(1);
+	company.setEmail("tcs@gmail.com");
+	company.setName("tcs");
+	company.setAddress(address);
+    company.setEmployee(list);
+	
+	
+	
+	
+	
+	
+	
+	
+	Dao dao = new Dao();
+	dao.saveCompany(company);
+}
+}

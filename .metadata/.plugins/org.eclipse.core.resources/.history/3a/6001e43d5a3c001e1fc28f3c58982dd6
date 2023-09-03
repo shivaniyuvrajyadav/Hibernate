@@ -1,0 +1,68 @@
+package com.ty.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.ty.dao.Customer_Product_Dao;
+import com.ty.dto.Customer;
+import com.ty.dto.Product;
+
+public class Customer_Product_Controller {
+public static void main(String[] args) {
+	Customer customer = new Customer();
+	customer.setName("Ram");
+	customer.setMno(20933201);
+	customer.setAddress("bangalore");
+	
+	Customer customer1 = new Customer();
+	customer1.setName("honey");
+	customer1.setMno(818801082);
+	customer1.setAddress("manali");
+	
+    Product product = new Product();
+	product.setName("Laptop");
+	product.setPrice(15000);
+	product.setQty(1);
+	
+	 Product product1 = new Product();
+		product1.setName("bag");
+		product1.setPrice(15000);
+		product1.setQty(2);
+		
+		List<Product>list = new ArrayList<Product>();
+		list.add(product);
+		list.add(product1);
+		
+		customer.setProduct(list);
+		customer1.setProduct(list);
+		
+		Customer_Product_Dao dao = new Customer_Product_Dao();
+		dao.saveCustomer(customer);
+		dao.saveCustomer(customer1);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+}
+}

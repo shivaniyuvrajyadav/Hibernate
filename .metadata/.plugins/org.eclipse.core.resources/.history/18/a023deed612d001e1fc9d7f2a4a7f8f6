@@ -1,0 +1,9 @@
+package com.jsp.fApp;
+
+public class ProductDetails {
+
+	public ProductDetails() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

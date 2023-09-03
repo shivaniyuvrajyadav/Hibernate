@@ -1,0 +1,47 @@
+package com.jsp.onetomany_bi.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.jsp.onetomany_bi.dao.Company_Employee_Dao;
+import com.jsp.onetomany_bi.dto.Company;
+import com.jsp.onetomany_bi.dto.Employee;
+
+public class Company_Employee_Controller {
+public static void main(String[] args) {
+	
+
+	Company company1 = new Company();
+	company1.setCid(500);
+	company1.setCname("tcs");
+	company1.setLoc("borivali");
+	company1.setPhno(877777);
+	
+	Employee employee1 = new Employee();
+	employee1.setEid(300);
+	employee1.setEname("sheela");
+	employee1.setAddress("thane");
+		employee1.setSal(50000);
+//		employee1.setCompany(company1);
+		
+	
+	Employee employee = new Employee();
+	employee.setEid(1000);
+	employee.setEname("sheela");
+	employee.setAddress("thane");
+		employee.setSal(50000);
+//		employee.setCompany(company1);
+		
+		List<Employee>list = new ArrayList<Employee>();
+		list.add(employee);
+		list.add(employee1);
+		
+	company1.setEmployee(list);
+	
+	Company_Employee_Dao dao = new Company_Employee_Dao();
+//	dao.saveEmployee(employee);
+//	dao.updateCompany(company1);
+dao.saveCompany(company1);
+//    dao.deleteCompany(109);
+}
+}

@@ -1,0 +1,60 @@
+package com.ty.dto;
+
+import java.util.List;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
+
+import org.hibernate.annotations.Cascade;
+import org.hibernate.annotations.CascadeType;
+
+import com.ty.dto.Address;
+
+@Entity
+public class Company {
+@Id
+private int id;
+private String name;
+private String email;
+
+@OneToOne
+private Address address;
+@OneToMany
+@Cascade(value=CascadeType.ALL)
+private List<Employee> employee;
+
+public List<Employee> getEmployee() {
+	return employee;
+}
+public void setEmployee(List<Employee> list) {
+	this.employee = list;
+}
+public int getId() {
+	return id;
+}
+public void setId(int id) {
+	this.id = id;
+}
+public String getName() {
+	return name;
+}
+public void setName(String name) {
+	this.name = name;
+}
+public String getEmail() {
+	return email;
+}
+public void setEmail(String email) {
+	this.email = email;
+}
+public Address getAddress() {
+	return address;
+}
+public void setAddress(Address address) {
+	this.address = address;
+}
+
+
+}

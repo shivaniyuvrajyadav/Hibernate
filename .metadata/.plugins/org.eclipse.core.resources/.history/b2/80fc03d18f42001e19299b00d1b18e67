@@ -1,0 +1,122 @@
+package com.jsp.MockHibernate.Controller;
+//company mapping system project
+import java.util.ArrayList;
+import java.util.List;
+
+import com.jsp.MockHibernate.dao.Mock_Dao;
+import com.jsp.MockHibernate.dto.Address;
+import com.jsp.MockHibernate.dto.Company;
+import com.jsp.MockHibernate.dto.Computer;
+import com.jsp.MockHibernate.dto.Department;
+import com.jsp.MockHibernate.dto.Employee;
+import com.jsp.MockHibernate.dto.Skills;
+
+public class Mock_Controller {
+
+	public static void main(String[] args) {
+		
+		Employee employee=new Employee();
+		employee.setId(41);
+		employee.setName("G Sagar");
+		employee.setPhno(738735898);
+		employee.setSal(205000);
+		employee.setAge(26);
+		
+		Employee employee1=new Employee();
+		employee1.setId(0);
+		employee1.setName("Kshitija");
+		employee1.setPhno(767687l);
+		employee1.setSal(705000);
+		employee1.setAge(23);
+		
+		Company company=new Company();
+		company.setId(401);
+		company.setName("Bank Of America");
+		company.setEmail("BOA@gmail.com");
+		
+		Company company1=new Company();
+		company1.setId(402);
+		company1.setName("Tcs");
+		company1.setEmail("T@gmail.com");
+		
+		Address address=new Address();
+		address.setId(400);
+		address.setPincode(400601);
+		address.setPhNo(5468788926l);
+		address.setPlace("Thane");
+		company.setAddress(address);
+		company1.setAddress(address);
+		
+		List<Employee> elist=new ArrayList<Employee>();
+		elist.add(employee);
+		elist.add(employee1);
+		
+		company.setEmployee(elist);
+		employee.setCompany(company);
+		employee.setCompany(company1);
+		
+		Computer computer=new Computer();
+		computer.setId(409);
+		computer.setModel("7thGen");
+		computer.setBrand("Lenovo");
+		employee.setComputer(computer);
+		
+		Computer computer1=new Computer();
+		computer1.setId(408);
+		computer1.setModel("6th_Gen");
+		computer1.setBrand("Lenovo");
+		employee1.setComputer(computer);
+		
+		List<Computer> clist=new ArrayList<Computer>();
+		clist.add(computer);
+		clist.add(computer1);
+		
+		company.setComputer(clist);
+		
+		Department department=new Department();
+		department.setId(4001);
+		department.setName("Developer");
+		department.setPhNo(7786498);
+		
+		Department department1=new Department();
+		department1.setId(4002);
+		department1.setName("Tester");
+		department1.setPhNo(7786498);
+		
+		List<Department> dlist=new ArrayList<Department>();
+		dlist.add(department);
+		dlist.add(department1);
+		
+		
+		
+		Skills skills=new Skills();
+		skills.setId(43);
+		skills.setName("Gaming");
+		
+		Skills skills1 =new Skills();
+		skills1.setId(44);
+		skills1.setName("Programming");
+		
+		List<Skills> slist=new ArrayList<Skills>();
+		slist.add(skills);
+		slist.add(skills1);
+		
+		employee.setDepartment(dlist);
+		employee.setSkills(slist);
+		company.setAddress(address);
+		company.setComputer(clist);
+		Mock_Dao dao=new Mock_Dao();
+//		dao.saveCompany(company);
+//		dao.updateEmployee(402, elist);
+		
+	dao.saveEmployee(employee);
+		
+//		dao.findEmployee(8);
+//		dao.findCompany(18);
+//		dao.findAllEmp(employee);
+//		dao.findAllComp(company);
+
+//		dao.updateCompany(company);
+	}
+
+}

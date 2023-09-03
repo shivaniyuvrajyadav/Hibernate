@@ -1,0 +1,20 @@
+<!DOCT YPE html> // 1.html, 2. redirectServlet.java
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<form action="Redirect">
+	
+	Student Name: <input type="text" name="sname">
+	<br>College name: <input type="text" name="cname">
+	
+	<br>
+	<input type="submit" value="Login">
+	
+</form>
+
+</body>
+</html>

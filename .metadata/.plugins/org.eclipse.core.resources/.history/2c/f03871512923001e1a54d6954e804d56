@@ -1,0 +1,19 @@
+<!DOCTYPE html> //1. html, 2. Loginpage.java, 3. WelcomeServlet.java
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<form action="LoginPage1" method="post">
+	Username: <input type="text" name="uname">
+	<br>
+	Password: <input type="text" name="pass">
+	<br>
+	<input type="submit" value="login">
+	<br>
+	
+</form>
+</body>
+</html>

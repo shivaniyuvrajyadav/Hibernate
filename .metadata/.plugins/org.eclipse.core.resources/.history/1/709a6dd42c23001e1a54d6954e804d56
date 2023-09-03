@@ -1,0 +1,48 @@
+package qspiderServlet;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import org.apache.catalina.connector.Response;
+
+import jakarta.servlet.RequestDispatcher;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+@WebServlet("/Calculate")
+ class Calculate extends HttpServlet {
+
+	
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+	
+		int a = Integer.parseInt(req.getParameter("n1"));
+		int b = Integer.parseInt(req.getParameter("n2"));
+		
+		int add = a+b;
+		int sub = b-a;
+		int mul = a*b;
+		int div = b/a;
+		
+		
+		PrintWriter pw = resp.getWriter();
+		pw.println("Addition = "+add);
+		
+		PrintWriter pw1 = resp.getWriter();
+		pw.println("Substraction = "+sub);
+		
+		PrintWriter pw2 = resp.getWriter();
+		pw.println("Multiplication = "+mul);
+		
+		PrintWriter p3 = resp.getWriter();
+		pw.println("Division = "+div);
+		
+		//RequestDispatcher rq= req.getRequestDispatcher("Addition");
+		//rq.forward(req, resp);
+			
+		
+	}
+}
